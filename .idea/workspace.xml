@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af8c9522-b174-460a-a621-9bf059b7570c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestePratos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/BtnOkActionListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/BtnOkActionListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/BtnOkActionListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/BtnOkActionListener.class" afterDir="false" />
-    </list>
+    <list default="true" id="af8c9522-b174-460a-a621-9bf059b7570c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +45,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -107,7 +100,7 @@
       <option name="presentableId" value="Default" />
       <updated>1621597424038</updated>
       <workItem from="1621597425228" duration="14741000" />
-      <workItem from="1621700730103" duration="1345000" />
+      <workItem from="1621700730103" duration="1935000" />
     </task>
     <servers />
   </component>

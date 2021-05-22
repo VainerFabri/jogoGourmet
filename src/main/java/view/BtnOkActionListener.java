@@ -7,8 +7,6 @@ import model.Pratos;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.ArrayList;
-import java.util.List;
 
 public class BtnOkActionListener implements ActionListener {
 
@@ -19,8 +17,6 @@ public class BtnOkActionListener implements ActionListener {
     private int YesNoOptCake;
     private int YesNoOptNew;
     private int contadorPratos = 0;
-
-    private List<Pratos> listaPratos = new ArrayList<>();
 
     @Override
     public void actionPerformed(ActionEvent e) {
@@ -37,6 +33,7 @@ public class BtnOkActionListener implements ActionListener {
                   perguntaLasanha();
                   novoPrato();
               }else{
+                  //Percorre a lista de pratos buscando o último prato digitado no campo
                   perguntaInfoPrato(pratosService.getPratos().stream().skip(pratosService.getPratos().size() - 1).findFirst().get().getNome());
               }
           }
@@ -64,7 +61,22 @@ public class BtnOkActionListener implements ActionListener {
 
         String nome = JOptionPane.showInputDialog(Utils.PERGUNTA_PRATO_NOVO);
 
+        //Tratamento de erros no caso do campo não ser preenchido, o mesmo se aplica para o tipo
+        if(nome == null) {
+            return;
+        }else if(nome.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Nome inválido", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+
         String tipo = JOptionPane.showInputDialog(nome.concat(Utils.TIPO_PRATO_LINHA).concat(this.pratoSelecionado.getNome()).concat(" não"));
+
+        if(tipo == null) {
+            return;
+        }else if(tipo.isEmpty()){
+            JOptionPane.showMessageDialog(null, "Tipo inválido", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
 
         contadorPratos++;
         pratosService.Salvar(new Pratos(nome, tipo));

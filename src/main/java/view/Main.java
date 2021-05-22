@@ -13,7 +13,7 @@ public class Main {
 
         JFrame frame= new JFrame(gc);
         frame.setTitle(Utils.TITULO);
-        frame.setSize(300, 150);
+        frame.setSize(Utils.LARGURA_JANELA, Utils.ALTURA_JANELA);
         frame.setLocationRelativeTo(null);
         frame.setLayout(null);
 
